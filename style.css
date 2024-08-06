@@ -11,9 +11,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: 2px solid; */
     margin: auto 0;
-    /* min-height: 100vh; */
     height: 100vh;
 }
 
@@ -23,19 +21,17 @@ body {
     padding: 20px 30px;
     border-radius: 20px;
 
-    width: 20%;
+    width: fit-content;
     display: flex;
     justify-content: center;
 
 }
 #timer {
-    font-size: 60px;
     font-weight: 700;
-    font-size: 60px;
+    font-size: 300%;
 }
 
 .btns {
-    /* display: flex; */
     margin-top: 30px;
 
 }
