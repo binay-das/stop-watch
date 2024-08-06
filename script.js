@@ -1,5 +1,5 @@
 let start = document.getElementById("start");
-let stop = document.getElementById("stop");
+let pause = document.getElementById("pause");
 let reset = document.getElementById("reset");
 
 let timer = document.getElementById("timer");
@@ -57,7 +57,7 @@ start.addEventListener("click", function(){
     timerId = setInterval(startTimer, 10);
 });
 
-stop.addEventListener("click", function(){
+pause.addEventListener("click", function(){
     clearInterval(timerId);
 });
 
