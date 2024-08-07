@@ -25,27 +25,10 @@ let startTimer = () => {
     let msecString;
     let secString;
     let minsString;
-    if(msec < 10){
-        msecString = `0${msec}`;
-    }
-    else {
-        msecString = msec;
-    }
-
-    if(sec < 10){
-        secString = `0${sec}`;
-    }
-    else {
-        secString = sec;
-    }
-
-    if(mins < 10){
-        minsString = `0${mins}`;
-    }
-    else {
-        minsString = mins;
-    }
-
+    
+    msecString = msec < 10 ? `0${msec}` : msec;
+    secString = sec < 10 ? `0${sec}` : sec;
+    minsString = mins < 10 ? `0${mins}` : mins;
 
     timer.innerHTML = `${minsString} : ${sec} : ${msecString}`;
 }
